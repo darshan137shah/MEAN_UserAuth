@@ -1,0 +1,34 @@
+<div class="jumbotron">
+  <form name='regForm' class="form container">
+    <div class="form-group">
+      <label for="username">UserName</label>
+      <input type="text" class='form-control' id='username' ng-model="user.username" ng-required="true">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class='form-control' id='password' ng-model="user.password" ng-required="true">
+    </div>
+    <div class="form-group">
+      <label for="firstname">FirstName</label>
+      <input type="text" class='form-control' id='firstname' ng-model="user.firstname" ng-required="true">
+    </div>
+    <div class="form-group">
+      <label for="lastname">LastName</label>
+      <input type="text" class='form-control' id='lastname' ng-model="user.lastname" ng-required="true">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class='form-control' id='email' ng-model="user.email" ng-required="true">
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input type="number" class='form-control' id='phone' ng-model="user.phone" ng-required="true">
+    </div>
+    <div class="form-group">
+      <label for="location">Location</label>
+      <input type="text" class='form-control' id='location' ng-model="user.location" ng-required="true">
+    </div>
+
+    <input type="button" class='btn btn-primary' value="Register" ng-click='signUpData(user)' ng-disabled='regForm.$invalid'>
+  </form>
+</div>
